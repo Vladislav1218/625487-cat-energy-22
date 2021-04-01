@@ -18,18 +18,18 @@
     <p>заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form method="post" action="input5.php">
       <fieldset>
-      <p>имя:*</p>
-      <p>вес (кг):*</p>
-      <p>Возраст (лет):*</p>
-        <input name="option1" value="Барсик"><Br>
+      <label>имя:*</label>
+      <!-- <p>вес (кг):*</p>
+      <p>Возраст (лет):*</p> -->
+        <!-- <input name="option1" placeholder="Барсик"><Br>
         <input name="option1" value="7"><Br>
-        <input name="option1" value="7"><Br>
+        <input name="option1" value="7"><Br> -->
       </fieldset>
       <br>
       <fieldset>
-        <input type="radio" name="option1" value="a1" checked>похудение<Br>
+        <!-- <label><input type="radio" name="option1" value="a1" checked>похудение<Br></label>
         <input type="radio" name="option1" value="a2">набор массы<Br>
-        <input type="radio" name="option1" value="a3">не знаю (нужен ваш совет)<Br>
+        <input type="radio" name="option1" value="a3">не знаю (нужен ваш совет)<Br> -->
       </fieldset>
       <br>
       <fieldset>
@@ -40,9 +40,9 @@
         <input name="option1" value="8 (960) 900-60-90"><Br>
       </fieldset>
       <br>
-        <h2>Комментарий</h2>
         <fieldset>
-          <p>расскажите о повадках кота</p><Br>
+          <h2>Комментарий</h2>
+          <textarea>расскажите о повадках кота</textarea><Br>
       </fieldset>
       <br>
       <h2>Дополнительно</h2>
@@ -52,7 +52,7 @@
         <input type="checkbox" name="option1" value="a3">молоко<Br>
         <input type="checkbox" name="option1" value="a3">витамины<Br>
       </fieldset>  
-      <p>отправить заявку</p>
+      <input type="submit"> заявку</input>
       <p>* — Обязательные поля</p>  
     </form>
     <section class="collaboration">
