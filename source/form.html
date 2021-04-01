@@ -14,30 +14,26 @@
     <div class="program-selection"><button>Подбор программы</button></div>
   </header>
   <main>
+    <section>
     <h1>Подбор программы</h1>
     <p>заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form method="post" action="input5.php">
       <fieldset>
-      <label>имя:*</label>
-      <!-- <p>вес (кг):*</p>
-      <p>Возраст (лет):*</p> -->
-        <!-- <input name="option1" placeholder="Барсик"><Br>
-        <input name="option1" value="7"><Br>
-        <input name="option1" value="7"><Br> -->
+        <label>имя:*<input name="option1" placeholder="Барсик"><Br></label>
+        <label>вес (кг):*<input name="option1" placeholder="7"><Br></label>
+        <label>Возраст (лет):*<input name="option1" placeholder="7"><Br></label>
       </fieldset>
       <br>
       <fieldset>
-        <!-- <label><input type="radio" name="option1" value="a1" checked>похудение<Br></label>
-        <input type="radio" name="option1" value="a2">набор массы<Br>
-        <input type="radio" name="option1" value="a3">не знаю (нужен ваш совет)<Br> -->
+        <label><input type="radio" name="option1" placeholder="a1" checked>похудение<Br></label>
+        <label><input type="radio" name="option1" placeholder="a2">набор массы<Br></label>
+        <label><input type="radio" name="option1" placeholder="a3">не знаю (нужен ваш совет)<Br></label>
       </fieldset>
       <br>
       <fieldset>
-        <h1>Контактные данные (владельца кота)</h1>
-        <p>e-mail:*</p>
-        <p>телефон:*</p>
-        <input name="option1" value="kuklachev@gmail.com"><Br>
-        <input name="option1" value="8 (960) 900-60-90"><Br>
+      <h1>Контактные данные (владельца кота)</h1>
+        <label>e-mail:*<input name="option1" placeholder="kuklachev@gmail.com"><Br></label>
+        <label>телефон:*<input name="option1" placeholder="8 (960) 900-60-90"><Br></label>
       </fieldset>
       <br>
         <fieldset>
@@ -47,14 +43,16 @@
       <br>
       <h2>Дополнительно</h2>
       <fieldset>
-        <input type="checkbox" name="option1" value="a1" checked>сахарозаменитель<Br>
-        <input type="checkbox" name="option1" value="a2">питьевая вода<Br>
-        <input type="checkbox" name="option1" value="a3">молоко<Br>
-        <input type="checkbox" name="option1" value="a3">витамины<Br>
+        <label><input type="checkbox" name="option1" placeholder="a1" checked>сахарозаменитель<Br></label>
+        <label><input type="checkbox" name="option1" placeholder="a2">питьевая вода<Br></label>
+        <label><input type="checkbox" name="option1" placeholder="a3">молоко<Br></label>
+        <label><input type="checkbox" name="option1" placeholder="a3">витамины<Br></label>
       </fieldset>  
-      <input type="submit"> заявку</input>
+      <label><input type="submit"> заявку</input></label>
       <p>* — Обязательные поля</p>  
     </form>
+  </section>
+
     <section class="collaboration">
       <div>
           <h2>приглашаем
