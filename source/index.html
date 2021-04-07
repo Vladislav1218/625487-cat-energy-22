@@ -11,17 +11,17 @@
   <header class="header">
     <img src="./img/logo-mobile.svg" alt="logo-mobile" class="header__logo">
     <button class="header__button">Открыть меню</button>
-    <ol class="header__menu">
+    <ul class="header__menu">
       <li class="header__menu-item">Главная</li>
       <li class="header__menu-item">Каталог продукции</li>
       <li class="header__menu-item">Подбор программы</li>
-    </ol>
+    </ul>
   </header>
-  <main>
+  <main class="main">
     <section class="cat-energy">
       <div class="cat-energy__back"></div>
-      <h1 class="cat-energy__title">Функциональное питание для котов</h1>
-      <h2 class="cat-energy__subtitle">Занялся собой? Займись котом!</h2>
+      <h2 class="cat-energy__title">Функциональное питание для котов</h2>
+      <h3 class="cat-energy__subtitle">Занялся собой? Займись котом!</h3>
       <!-- <img src="-" alt="-"> -->
     </section>
     <section class="programm">
@@ -66,14 +66,14 @@
             <p class="example__text">5 КГ</p>
             <p class="example__text">снижение веса</p>
           </div>
-          <div class="exampe__item">
+          <div class="example__item">
             <p class="example__text">60 ДНЕЙ</p>
             <p class="example__text">затрачено времени</p>
           </div>
           <p class="example__text">Затраты на питание: 15 000 руб.</p>
-          <div class="exampe__item">БЫЛО</div>
-          <div class="exampe__item">Полоска</div>
-          <div class="exampe__item">Стало</div>
+          <div class="example__item">БЫЛО</div>
+          <div class="example__item">Полоска</div>
+          <div class="example__item">Стало</div>
     </section>
     <section class="collaboration">
       <ul class="collaboration__list">
@@ -89,14 +89,27 @@
     </section>
     <!-- <section class="map"></section> -->
   </main>
-  <footer>
-    <div>
-      <img src= .img/footer class="footer">
-      <div><img src= .img/footer class="VK">
-      <img src= .img/footer class="Instagram">
-      <img src= .img/footer class="Facebook">
-    </div>
-    <p>HTML Academy</p>
+  <footer class="footer">
+    <section class="footer__title">
+      <div class="footer__title-image">
+      </div>
+    </section>
+    <section class="footer__socials">
+      <ul class="footer__socials-list">
+        <li class="footer__socials-listitem">
+          <a href="#"><img src="./img/VK.svg" class="footer__socials-item"></a>
+        </li>
+        <li class="footer__socials-listitem">
+          <a href="#"><img src="./img/Inst.svg" class="footer__socials-item"></a>
+        </li>
+        <li class="footer__socials-listitem">
+          <a href="#"><img src="./img/Fb.svg" class="footer__socials-item"></a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer__author">
+      <p>HTML Academy</p>
+    </section>
   </footer>
 </body>
 </html>
