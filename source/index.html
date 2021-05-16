@@ -11,15 +11,17 @@
 <body>
     <header class="header">
         <section class="header__socials">
-            <div class="header__socials-listitem">
-                <img src="./img/logo-mobile.svg" class="header__socials-item">
-            </div>
-            <div class="header__socials-listitem">
-                <img src="./img/footer-title.svg" class="header__socials-item">
-            </div>
-            <div class="header__socials-listitem">
-                <a href="#"><img src="./img/Buter.svg" class="header__socials-item"></a>
-            </div>
+            <picture>
+                <source srcset="./img/logo-tablet.svg" media="(min-width: 1440px)">
+                <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
+                <img src="./img/Header_mobile.svg" class="header__socials-item">
+            </picture>
+            <img src="./img/Buter.svg" class="header__socials-button"></a>
+        </section>
+        <section class="header__menu">
+            <div class="header__menu-item header__menu-item--active"><a href="#">Главная</a></div>
+            <div class="header__menu-item"><a href="./catalog.html">Каталог продукции</a></div>
+            <div class="header__menu-item"><a href="./form.html">Подбор программы</a></div>
         </section>
     </header>
     <main class="main">
@@ -28,10 +30,14 @@
                 <h2 class="cat-energy__title">Функциональное питание для котов</h2>
                 <h3 class="cat-energy__subtitle">Занялся собой? Займись котом!</h3>
             </div>
-            <img class="cat-energy-can" src="img/index-can-mobile.png" alt="index-can-mobile">
+            <a class="cat-energy__link button">Подобрать программу</a>
+            <picture>
+                <source srcset="./img/index-can-tablet.png" media="(min-width: 768px)">
+                <img class="cat-energy-can" src="img/index-can-mobile.png" alt="index-can-mobile">
+            </picture>
         </section>
         <section class="programm">
-            <a class="programm__link button">Подобрать программу</a>
+
             <ul class="programm__list">
                 <li class="programm__item">
                     <div class="programm__item-titleblock">
@@ -45,7 +51,8 @@
                 </li>
                 <li class="programm__item">
                     <div class="programm__item-titleblock">
-                        <img src="./img/pantera.svg" class="programm__item-block programm__item-block--pantera">
+                        <img width="67px" height="50px" src="./img/pantera.svg"
+                            class="programm__item-block programm__item-block--pantera">
                         <p class="programm__item-title">Набор массы</p>
                     </div>
                     <p class="programm__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -56,7 +63,7 @@
             </ul>
         </section>
         <section class="description">
-            <h2 class="description__subtitle">Как это работает?</h2>
+            <h2 class="description__subtitle">Как это работает</h2>
             <ul class="description__list">
                 <li class="description__item">
                     <img src="./img/list.svg" class="description__item_group">
@@ -100,7 +107,19 @@
                 </div>
                 <p class="example__spendmoney">Затраты на питание: 15 000 руб.</p>
             </div>
-            <img src="./img/cat.png" alt="picture of cat">
+            <div class="exemple__picture">
+                <div class="exemple__picture-before">
+                    <picture>
+                        <source srcset="./img/before-desktop.png" media="(min-width: 768px)">
+                        <img src="./img/cat.png" alt="picture of cat">
+                    </picture>
+                </div>
+                <div class="exemple__picture-after">
+                    <picture>
+                        <!-- <source srcset="./img/before-desktop.png" media="(min-width: 768px)"> -->
+                        <img src="./img/after-desktop.png" alt="picture of cat">
+                </div>
+            </div>
             <div class="example__slider">
                 <span class="example__text-item">БЫЛО</span>
                 <img src="./img/slider.png" alt="line slider">

@@ -13,6 +13,10 @@
     padding: 0 20px;
 }
 
+.exemple__picture-after{
+    display: none;
+}
+
 .example__text{
     display: flex;
     width: 100%;
@@ -83,4 +87,45 @@
 
 .example__slider{
     margin: 23px 0 25px;
+}
+
+@media(min-width:768px){
+    .example__spendmoney{
+        width: 200px;
+        flex-grow: 1;
+        text-align: end;
+    }
+
+    .example__subtitle{
+        font-size: 60px;
+        line-height: 60px;
+        margin-left: 30px;
+        margin-top: 43px;
+    }
+
+    .example__text{
+        width: 708px;
+        height: 72px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0;
+        margin-top: 63px;
+        margin-left: 30px;
+    }
+
+    .example__text-description{
+        width: 142px;
+    }
+
+    .example__item{
+        width: 162px;
+    }
+
+    .exemple__picture-after{
+        display: block;
+    }
+
+    .exemple__picture{
+        display: flex;
+    }
 }

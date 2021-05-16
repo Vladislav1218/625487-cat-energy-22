@@ -1,15 +1,16 @@
 .cat-energy{
     width: 320px;
-    height: 435px;
     position: relative;
     background-image: url(../../img/index-background-desktop.png);
     background-repeat: no-repeat;
+    padding-top: 417px;
+    padding-left: 20px;
 }
 
 .cat-energy__back{
     display: flex;
     align-items: center;
-
+    top: 0;
 
     position: absolute;
     flex-direction: column;
@@ -48,4 +49,35 @@
     position: absolute;
     left: 20px;
     top: 167px;
+}
+
+@media(min-width: 768px){
+    .cat-energy{
+        background-image: none;
+        height: 800px;
+        padding-top: 200px;
+        padding-left: 69px;
+    }
+
+    .cat-energy__back{
+        background-color: transparent;
+        left: 117px;
+    }
+
+    .cat-energy__title{
+        color: black;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .cat-energy__subtitle{
+        color: black;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .cat-energy-can{
+        z-index: -1;
+    }
+
 }

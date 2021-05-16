@@ -30,3 +30,53 @@
     font-size: 14px;
     line-height: 18px;
 }
+
+@media(min-width: 768px){
+    .description__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 72px;
+    }
+
+    .description__subtitle{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .description__item{
+        flex-basis: 50%;
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: url(../../img/1.png);
+        background-repeat: no-repeat;
+        background-position: center left 130px;
+        background-size: contain;
+        margin-bottom: 37px;
+    }
+
+    .description__item:nth-of-type(2){
+        background-image: url(../../img/2.png);
+    }
+
+    .description__item:nth-of-type(3){
+        background-image: url(../../img/3.png);
+    }
+
+    .description__item:nth-of-type(4){
+        background-image: url(../../img/4.png);
+    }
+
+    .description__item-text{
+        font-size: 16px;
+        line-height: 24px;
+        width: 250px
+    }
+
+    .description__item_group{
+        width: 80px;
+        height: 80px;
+    }
+
+
+}

@@ -12,15 +12,17 @@
 <body>
     <header class="header">
         <section class="header__socials">
-            <div class="header__socials-listitem">
-                <img src="./img/logo-mobile.svg" class="header__socials-item">
-            </div>
-            <div class="header__socials-listitem">
-                <img src="./img/footer-title.svg" class="header__socials-item">
-            </div>
-            <div class="header__socials-listitem">
-                <a href="#"><img src="./img/buter.svg" class="header__socials-item"></a>
-            </div>
+            <picture>
+                <source srcset="./img/logo-tablet.svg" media="(min-width: 1440px)">
+                <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
+                <img src="./img/Header_mobile.svg" class="header__socials-item">
+            </picture>
+            <img src="./img/Buter.svg" class="header__socials-button"></a>
+        </section>
+        <section class="header__menu">
+            <div class="header__menu-item"><a href="./index.html">Главная</a></div>
+            <div class="header__menu-item header__menu-item--active"><a href="#">Каталог продукции</a></div>
+            <div class="header__menu-item"><a href="./form.html">Подбор программы</a></div>
         </section>
     </header>
     <main class="main">
@@ -28,15 +30,17 @@
             <div class="catalog__heading">Каталог продукции</div>
             <ul class="catalog__list">
                 <li class="catalog__item">
-                    <div class="catalog__picture-wrapper"><img class="catalog__itempicture" width="68" height="86"
-                            src="./img/catalog-1-desktop.png" alt="picture1"></div>
+                    <div class="catalog__picture-wrapper">
+                        <img class="catalog__itempicture" width="68" height="86"
+                            src="./img/catalog-1-desktop.png" alt="picture1">
+                        </div>
                     <div class="catalog__itemtext">
                         <p class="catalog__itemheader">
                             Cat Energy
                             PRO
                             500 г</p>
                         <table class="catalog__table">
-                            <tr class="catalog__tablelist">
+                            <tr class="catalog__tablelist" border="2"bordercolor="additional-list__green">
                                 <td class="catalog__tableitem">Масса</td>
                                 <td class="catalog__tableitem catalog__tableitem--linetext">500 г.</td>
                             </tr>

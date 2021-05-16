@@ -13,23 +13,20 @@
 <body>
     <header class="header">
         <section class="header__socials">
-            <div class="header__socials-listitem">
-                <img src="./img/logo-mobile.svg" class="header__socials-item">
-            </div>
-            <div class="header__socials-listitem">
-                <img src="./img/footer-title.svg" class="header__socials-item">
-            </div>
-            <div class="header__socials-listitem">
-                <a href="#"><img src="./img/Buter.svg" class="header__socials-item"></a>
-            </div>
+            <picture>
+                <source srcset="./img/logo-tablet.svg" media="(min-width: 1440px)">
+                <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
+                <img src="./img/Header_mobile.svg" class="header__socials-item">
+            </picture>
+            <img src="./img/Buter.svg" class="header__socials-button"></a>
+        </section>
+        <section class="header__menu">
+            <div class="header__menu-item"><a href="./index.html">Главная</a></div>
+            <div class="header__menu-item"><a href="./catalog.html">Каталог продукции</a></div>
+            <div class="header__menu-item header__menu-item--active"><a href="#">Подбор программы</a></div>
         </section>
     </header>
-    <!-- <header class="header">
-    <img src="./img/logo-tablet.svg" alt="logo-tablet" class="header__logo">
-    <div class="main"><button>Главная</button></div>
-    <div class="catalog"><button>Каталог продукции</button></div>
-    <div class="program-selection"><button>Подбор программы</button></div>
-  </header> -->
+
     <main class="main">
         <section class="section">
             <h1 class="section-head">Подбор программы</h1>
@@ -69,10 +66,12 @@
                     <hr class="contact-details__greenline">
                     <h1 class="contact-details__head">Контактные данные (владельца кота)</h1>
                     <label class="contact-details__label">e-&nbsp;mail:*
-                        <input class="contact-details__text contact-details__text--mail" name="option1" placeholder="kuklachev@gmail.com">
+                        <input class="contact-details__text contact-details__text--mail" name="option1"
+                            placeholder="kuklachev@gmail.com">
                     </label>
                     <label class="contact-details__label">телефон:*
-                        <input class="contact-details__text contact-details__text--phone" name="option1" placeholder="8 (960) 900-60-90">
+                        <input class="contact-details__text contact-details__text--phone" name="option1"
+                            placeholder="8 (960) 900-60-90">
                     </label>
                 </fieldset>
                 <fieldset class="comment lining">
