@@ -1,7 +1,6 @@
 .footer{
     width: 320px;
     margin: 0 auto;
-    outline: 2px solid blue;
     background-color: #F2F2F2;
     padding: 0 20px;
 }
@@ -24,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 0 25px 0;
+    padding: 19px 0 16px 0;
     border-bottom: 1px solid #D9D9D9;
 }
 
@@ -33,9 +32,9 @@
     display: flex;
     align-items: center;
     width: 128px;
-    justify-content: space-between;
     padding: 0%;
     margin: 0%;
+
 }
 
 .footer__socials-listitem{
@@ -63,6 +62,14 @@
     justify-content: center;
 }
 
+.footer__socials-listitem--inst{
+    padding-left: 34px;
+}
+
+.footer__socials-listitem--fb{
+    padding-left: 37px;
+}
+
 @media(min-width: 768px){
     .footer{
         flex-direction: row;
@@ -79,4 +86,8 @@
     .footer__author{
         width: 163px;
     }
+}
+
+@media(min-width: 1440px){
+
 }

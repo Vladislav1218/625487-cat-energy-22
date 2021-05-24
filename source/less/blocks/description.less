@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     font-size: 36px;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 .description__list{
@@ -29,6 +29,8 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+    padding-left: 7px;
+    margin-top: 11px;
 }
 
 @media(min-width: 768px){
@@ -41,7 +43,8 @@
 
     .description__subtitle{
         font-size: 60px;
-        line-height: 60px;
+        line-height: 20px;
+        margin-left: 10px;
     }
 
     .description__item{
@@ -79,4 +82,17 @@
     }
 
 
+}
+
+@media(min-width: 1440px){
+    .description__list{
+        flex-direction: row;
+        width: 1220px;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .description__item{
+        flex-basis: 230px;
+    }
 }

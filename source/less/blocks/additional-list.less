@@ -4,7 +4,7 @@
 }
 
 .additional-list__title{
-    background-color: #FFFFFF;
+    background-color: @white;
     font-family: Oswald;
     font-size: 24px;
     line-height: 24px;
@@ -27,4 +27,47 @@
         margin-right: 30px;
         width: 708px;
     }
+
+    .additional-list__title{
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 20px;
+        width: fit-content;
+    }
+
+    .additional-products{
+        border: 1px solid #CDCDCD;
+    }
 }
+
+@media(min-width: 1440px){
+    .additional-list{
+        width: 1220px;
+        margin: 0 auto;
+        padding-top: 16px;
+        width: 100%;
+    }
+
+    .additional-list__content{
+        width: 1220px;
+        margin: auto;
+        margin-top: 81px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .additional-list__title{
+        width: fit-content;
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 0;
+        padding-left: 40px;
+        margin-left: 110px;
+    }
+
+    .additional-products{
+        border: 0;
+    }
+}
+

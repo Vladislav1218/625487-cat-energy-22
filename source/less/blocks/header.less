@@ -42,12 +42,14 @@
         justify-content: center;
         justify-content: space-between;
         width: 100%;
-
+        padding-left: 10px;
+        padding-top: 13px;
     }
 
     .header__menu{
         flex-direction: row;
-        padding-right: 24px;
+        padding-right: 31px;
+        padding-top: 3px;
     }
 
     .header__menu-item{
@@ -62,6 +64,8 @@
 
     .header__menu-item a{
         padding-bottom: 10px;
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .header__menu-item--active a{
@@ -70,9 +74,29 @@
 
     .header__socials{
         border-bottom: none;
+        padding-right: 55px;
     }
 
     .header__socials-button{
         display: none;
     }
 }
+
+
+@media(min-width: 1440px){
+    .header--index{
+        position: absolute;
+        z-index: 100;
+    }
+
+    .header--index .header__menu-link{
+        color: white;
+
+    }
+
+    .header--index .header__menu-link--active{
+        border-color: @white;
+    }
+}
+
+

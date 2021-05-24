@@ -13,7 +13,25 @@
     padding-left: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    padding-top: 15px;
 }
+
+.programm__item:last-of-type{
+    padding-top: 8px;
+}
+
+.programm__item:last-of-type .programm__item-titleblock{
+    margin-left: -7px;
+}
+
+.programm__item:last-of-type .programm__item-title{
+    margin-left: 10px;
+}
+
+.programm__item:last-of-type .programm__item-link-arrow{
+    margin-left: 4px;
+}
+
 
 .programm__item-titleblock{
     display: flex;
@@ -39,6 +57,9 @@
     font-size: 14px;
     border-bottom: 1px solid #D9D9D9;
     padding-bottom: 20px;
+    margin-top: 10px;
+    line-height: 18px;
+    margin-bottom: 20px;
 }
 
 .programm__item-link{
@@ -50,7 +71,11 @@
     text-transform: uppercase;
 }
 
-@media(min-width: 768px) {
+.programm__item-link-arrow{
+    padding-left: 10px;
+}
+
+@media(min-width: 768px) and (max-width: 1439px){
     .programm__item-block{
         position: absolute;
         right: 62px;
@@ -65,6 +90,9 @@
         min-height: 372px;
         padding-left: 52px;
         padding-right: 280px;
+        margin-top: 49px;
+        height: 384px;
+        margin-bottom: 32px;
     }
     .programm{
         padding: 0 30px;
@@ -80,11 +108,84 @@
         margin-top: 0;
         margin-bottom: 24px;
     }
+
+    .programm__item-titleblock{
+        padding-top: 15px;
+    }
+
+
     .programm__item-text{
         width: 100%;
         border: 0px;
         margin-top: 0;
         font-size: 16px;
-        margin-bottom: 52px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .programm__item:last-of-type{
+        padding-top: 77px;
+    }
+
+    .programm__item-link{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .programm__item-link-arrow{
+        padding-left: 21px;
+    }
+
+
+
+}
+
+@media(min-width: 1440px){
+    .programm__item{
+        width: 570px;
+    }
+
+    .programm__list{
+        display: flex;
+        flex-direction: row;
+        width: 1220px;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .programm__item-text{
+        width: 467px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .programm__item-title{
+        font-size: 36px;
+        line-height: 36px;
+        margin-left: 62px;
+    }
+
+    .programm__item-block{
+        width: 100px;
+        height: 106px;
+    }
+
+    .programm__item-block--pantera{
+        width: 134px;
+        height: 100px;
+    }
+
+    .programm__item:last-of-type .programm__item-title{
+        margin-left: 47px;
+    }
+
+    .programm__item-link{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .programm__item-link-arrow{
+        width: 24px;
+        height: 12px;
     }
 }

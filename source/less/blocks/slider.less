@@ -1,0 +1,47 @@
+.slider{
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    width: 86px;
+    height: 16px;
+    padding: 4px 6px;
+    box-sizing: border-box;
+}
+
+.slider__progress{
+    border-radius: 6px;
+    background-color: #68B738;
+    width: 35px;
+    height: 6px;
+}
+
+@media(min-width: 768px){
+    .slider{
+        border: none;
+        height: 6px;
+        width: 428px;
+        background: #DCDCDC;
+    }
+
+    .slider__progress{
+        position: relative;
+        border-radius: 50%;
+        height: 34px;
+        width: 34px;
+        border: 1px solid #CDCDCD;
+        background-color: white;
+        margin-top: -17px;
+        margin-left: 195px;
+    }
+
+    .slider__progress::after{
+        width: 8px;
+        height: 8px;
+        background: #68B738;
+        position: absolute;
+        content: "";
+        border-radius: 50%;
+        top: 12px;
+        left: 12px;
+    }
+}

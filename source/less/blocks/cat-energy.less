@@ -51,6 +51,10 @@
     top: 167px;
 }
 
+.cat-energy__link{
+    margin-top: 23px;
+}
+
 @media(min-width: 768px){
     .cat-energy{
         background-image: none;
@@ -62,22 +66,69 @@
     .cat-energy__back{
         background-color: transparent;
         left: 117px;
+        align-items: baseline;
+        top: 23px;
     }
 
     .cat-energy__title{
         color: black;
         font-size: 60px;
         line-height: 60px;
+        width: 414px;
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 41px;
     }
 
     .cat-energy__subtitle{
         color: black;
         font-size: 20px;
         line-height: 20px;
+        width: 283px;
+        margin: 0;
     }
 
     .cat-energy-can{
         z-index: -1;
+        top: 251px;
+        left: 29px;
     }
 
+    .cat-energy .cat-energy__link{
+        margin-top: 79px;
+        margin-left: 43px;
+        width: 244px;
+        height: 54px;
+        font-size: 20px;
+        line-height: 20px;
+
+    }
+
+}
+
+@media(min-width: 1440px){
+    .cat-energy{
+        width: 1440px;
+        background-image: url(../../img/rectangle.png), url(../../img/index-background-desktop1.png);
+        background-repeat: no-repeat;
+        padding-top: 480px;
+        background-position: top right;
+        // margin-top: -48px;
+        padding-left: 190px;
+    }
+
+    .cat-energy-can{
+        left: 558px;
+        top: 141px;
+        z-index: 1;
+    }
+
+    .cat-energy__back{
+        left: 190px;
+        top: 223px;
+    }
+
+    .cat-energy__link{
+        margin: 0;
+    }
 }
